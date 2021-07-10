@@ -1,19 +1,28 @@
 import { makeStyles } from "@material-ui/core/styles"
 
-export default makeStyles(() => ({
+export default makeStyles((theme) => ({
     root: {
         flexGrow: 1,
         borderRadius: "0",
         borderBottomLeftRadius: "25px",
         borderTopRightRadius: "25px",
         marginTop: "10px",
-        marginBottom: "20px"
+        marginBottom: "20px",
+        height: "min-content",
+        width: "min-content",
     },
     description: {
         marginTop: "10px"
     },
+    typography: {
+        padding: theme.spacing(2),
+    },
     media: {
         borderBottomLeftRadius: "25px",
+        // height: "min-content",
+        // width: "40%",
+        margin: "0",
+        padding: 0,
     },
     cardContent: {
         marginBottom: "12px"
@@ -21,6 +30,10 @@ export default makeStyles(() => ({
     cardProduct: {
         display: 'flex',
         justifyContent: 'space-between',
+    },
+    cardActionArea: {
+        // height: "200px",
+        // width: "200px",
     },
     cardActions: {
         display: 'flex',
