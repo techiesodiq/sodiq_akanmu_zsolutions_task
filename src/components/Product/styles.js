@@ -2,14 +2,21 @@ import { makeStyles } from "@material-ui/core/styles"
 
 export default makeStyles((theme) => ({
     root: {
-        flexGrow: 1,
+        // flexGrow: 1,
         borderRadius: "0",
         borderBottomLeftRadius: "25px",
         borderTopRightRadius: "25px",
-        marginTop: "10px",
-        marginBottom: "20px",
-        height: "min-content",
-        width: "min-content",
+        margin: "10px 10px 10px 10px",
+        padding: "0",
+        maxWidth: "500px",
+        // display: 'flex',
+        justifyContent: 'center',
+        align: "center",
+        // width: "70%",
+        // maxWidth: "1200px",
+    },
+    title: {
+        fontWeight: "bold",
     },
     description: {
         marginTop: "10px"
@@ -21,6 +28,7 @@ export default makeStyles((theme) => ({
         borderBottomLeftRadius: "25px",
         // height: "min-content",
         // width: "40%",
+        // maxWidth: "100%",
         margin: "0",
         padding: 0,
     },
@@ -52,7 +60,7 @@ export default makeStyles((theme) => ({
         borderTopLeftRadius: "12px",
         backgroundColor: "#FA9E0D",
         height: "82px",
-        width: "100px"
+        width: "100px",
     },
     plusSign: {
         fontWeight: "200",

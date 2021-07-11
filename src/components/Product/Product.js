@@ -39,20 +39,23 @@ const Product = ({ food }) => {
                     alt={food.title}
                     title={food.title}
                     className={classes.media}
+                    height="195px"
+                    maxWidth="300px"
+                    // width="max-content"
                     />
                     <CardContent mb={2} className={classes.cardContent}>
                         <div className={classes.cardProduct}>
-                            <Typography variant="h5" component="h2">
+                            <Typography variant="h6" component="h6" className={classes.title}>
                                 {food.title}
                             </Typography>
-                            <Typography variant="h5" component="h2">
+                            <Typography variant="h6" component="h6" className={classes.title}>
                                 {formatPrice(food.price)}
                             </Typography>
                         </div>
                         <Typography gutterBottom variant="body3" color="textPrimary" component="p">
                             {food.strMeal}
                         </Typography>
-                        <Typography className={classes.description} variant="body2" color="textSecondary" component="p" onClick={handleClick}>
+                        <Typography className={classes.description} variant="body3" color="textSecondary" component="p" onClick={handleClick}>
                             {shortDescription(food.description)}
                         </Typography>
                         <Popover
